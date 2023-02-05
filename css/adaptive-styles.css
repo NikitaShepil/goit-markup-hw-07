@@ -1,0 +1,77 @@
+html{
+    box-sizing:border-box;
+ }
+ 
+ *, *::before, *::after{
+    box-sizing: inherit;
+ }
+ 
+ 
+ h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+ }
+ 
+ ul{
+    margin: 0;
+    padding: 0;
+ }
+
+ :root{
+    --dark: rgba(46, 47, 66, 1);
+    --primary-brand:rgba(77, 90, 229, 1);
+    --pressed-state: rgba(64, 75, 191, 1);
+    --success: #31D0AA;
+    --text:rgba(67, 68, 85, 1);
+    --subtle-text: #8E8F99;
+    --accent:#E7E9FC;
+    --light:#F4F4FD;
+    --modal-overlay:#2E2F42;
+    --hero-background:#2E2F42;
+ }
+
+ img{
+    width: 100%;
+    display: block;
+ }
+ 
+ body {
+     background-color: white;
+     font-family: 'Roboto',sans-serif;
+     margin: 0;
+ }
+ li{
+     list-style: none;
+ }
+ 
+ .conteiner{
+   
+    padding-right: 16px;
+    padding-left: 16px;
+ }
+
+ @media screen and (min-width: 428px) {
+    .conteiner{
+        width: 396px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+ }
+
+ @media screen and (min-width: 768px) {
+    .conteiner{
+        width: 736px;
+    }
+ }
+    
+ @media screen and (min-width: 1200px){
+    .conteiner{
+        width: 1128px;
+    }
+ }
+
+ .mobile-menu-open{
+    fill: black;
+ }
+ 
+    
+ 
