@@ -650,7 +650,7 @@ box-sizing: border-box;
    
   }
 
-@media screen and (max-width:400px) {
+@media screen and (max-width:412px) {
    .friend-list > .item{
       
       width: 100%;
