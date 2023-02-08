@@ -16,25 +16,32 @@
 <body>
     <header class="header">
         
-        
         <div class="conteiner">
 
             <div class="head-list">
-
-                <nav class="head-nav">
-                    <a class="logo-title" href="./index.html">Web<span class="logo-title-secondary">Studio</span></a>
-                    <ul class="navigate">
-                        <li class="item"><a class="navigate-item selected-nav" href="./index.html">Studio</a></li>
-                        <li class="item"><a class="navigate-item" href="./portfolio.html">Portfolio</a></li>
-                        <li class="item"><a class="navigate-item" href="">Contacts</a></li>
+                
+                <div class="mobile-flex-box">
+                    <nav class="head-nav">
+                        <a class="logo-title" href="./index.html">Web<span class="logo-title-secondary">Studio</span></a>
+    
                         
-                    </ul>
-                </nav>
-                <button type="button">
-                    <svg class="mobile-menu-open">
-                        <use href="./images/sprite.svg#burger-menu"></use>
-                    </svg>
-                </button>
+                        <ul class="navigate">
+                            <li class="item"><a class="navigate-item selected-nav" href="./index.html">Studio</a></li>
+                            <li class="item"><a class="navigate-item" href="./portfolio.html">Portfolio</a></li>
+                            <li class="item"><a class="navigate-item" href="">Contacts</a></li>
+                            
+                        </ul>
+                    </nav>
+                    <button 
+                    class="mobile-menu-open js-open-menu"
+                    aria-expanded="false"
+                    aria-controls="mobile-menu" 
+                    type="button">
+                        <svg class="burger-menu-open" >
+                            <use href="./images/sprite.svg#icon-menu-burger"></use>
+                        </svg>
+                    </button>
+                </div>
                 <address>
                     <ul class="link-list" >
                         <li><a class="head-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
@@ -45,10 +52,58 @@
             </div>
            
         </div>
-            
+            <div  class="mobile-menu js-menu-container" id="mobile-menu">
+                <div class="conteiner">
+                    <button class="modal-btn js-close-menu" type="button">
+                        <svg class="cross-svg-btn">
+                            <use class="modal-btn-cross" href="./images/sprite-new.svg#icon-cross"></use>
+                        </svg>
+                    </button>
+                    <ul class="mobile-nav">
+                        <li><a class="mobile-nav-item" href="">Studio</a></li>
+                        <li><a class="mobile-nav-item" href="">Portfolio</a></li>
+                        <li><a class="mobile-nav-item" href="">Contacts</a></li>
+                    </ul>
+                    <ul class="mobile-links">
+                        <li><a class="mobile-tel-link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+                        <li><a class="mobile-mail-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                        
+                    </ul>
+                    
+                    <ul class="mobile-sm-list">
+                        <li class="item">
+                            <a class="mobile-icon-box" href="">
+                                <svg class="mobile-icon">
+                                <use href="./images/sprite.svg#icon-instagram"></use></svg>
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a class="mobile-icon-box" href="">
+                                <svg class="mobile-icon">
+                                <use href="./images/sprite.svg#icon-twitter"></use></svg>
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a class="mobile-icon-box" href="">
+                                <svg class="mobile-icon">
+                                <use href="./images/sprite.svg#icon-facebook"></use></svg>
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a class="mobile-icon-box" href="">
+                                <svg class="mobile-icon">
+                                <use href="./images/sprite.svg#icon-linkedin"></use></svg>
+                            </a>
+                        </li>
+                    </ul>
+
+
+
+                </div>   
+            </div>
         
     </header>
-    <!-- <main>
+    <main>
         <section class="hero">
             
             <div class="conteiner">
@@ -109,13 +164,13 @@
             
             
         </section>
-        <section class="act">
+       <section class="act">
             <div class="conteiner">
                 <h2 class="act-title">What are we doing</h2>
         <ul class="act-list">
-            <li class="item"><img src="./images/Rectangle-71.jpg" alt="mobile phone" width="360"></li>
-            <li class="item"><img src="./images/Rectangle-71-2.jpg" alt="computer" width="360"></li>
-            <li class="item"><img src="./images/Rectangle-71-3.jpg" alt="Scren of mobile phone" width="360"></li>
+            <li class="item"><img srcset="./images/Computer.jpg 1x, ./images/Computer@2x.jpg 2x" src="./images/Computer.jpg" alt="mobile phone" width="360"></li>
+            <li class="item"><img srcset="./images/Phone-screens.jpg 1x , ./images/Phone-screens@2x.jpg 2x" src="./images/Phone-screens.jpg" alt="computer" width="360"></li>
+            <li class="item"><img srcset="./images/Phone-in-the-hand.jpg 1x, ./images/Phone-in-the-hand@2x.jpg 2x" src="./images/Phone-in-the-hand.jpg" alt="Scren of mobile phone" width="360"></li>
         </ul>
             </div>
         
@@ -124,7 +179,11 @@
             <div class="conteiner"><h2 class="team-main-titel">Our Team</h2>
                 <ul class="team-list">
                     <li class="item">
-                        <img class="team-img" src="./images/img-1.jpg" alt="photo of Mark Guerrero" width="264">
+                        <img class="team-img"
+                         srcset=" ./images/img-1.jpg 1x, ./images/img-1@2x.jpg  2x" 
+                         src="./images/img-1.jpg" 
+                         alt="photo of Mark Guerrero" 
+                         width="264">
                         <h3 class="team-title">Mark Guerrero</h3>
                         <p class="team-text">Product Designer</p>
                         <ul class="team-sm-list">
@@ -159,7 +218,7 @@
                        
                     </li>
                     <li class="item">
-                        <img class="team-img" src="./images/img-2.jpg" alt="photo of Tom Ford" width="264">
+                        <img class="team-img" srcset="./images/img-2.jpg 1x, ./images/img-2@2x.jpg 2x " src="./images/img-2.jpg" alt="photo of Tom Ford" width="264">
                         <h3 class="team-title">Tom Ford</h3>
                         <p class="team-text">Frontend Developer</p>
                         <ul class="team-sm-list">
@@ -190,7 +249,7 @@
                         </ul>
                     </li>
                     <li class="item">
-                        <img class="team-img" src="./images/img-3.jpg" alt="photo of Camila Garcia" width="264">
+                        <img class="team-img" srcset="./images/img-3.jpg 1x, ./images/img-3@2x.jpg 2x" src="./images/img-3.jpg" alt="photo of Camila Garcia" width="264">
                         <h3 class="team-title">Camila Garcia</h3>
                         <p class="team-text">Marketing</p>
                         <ul class="team-sm-list">
@@ -222,7 +281,7 @@
     
                     </li>
                     <li class="item">
-                        <img class="team-img" src="./images/img-4.jpg" alt="photo of Daniel Wilson" width="264">
+                        <img class="team-img" srcset="./images/img-4.jpg 1x, ./images/img-4@2x.jpg 2x" src="./images/img-4.jpg" alt="photo of Daniel Wilson" width="264">
                         <h3 class="team-title">Daniel Wilson</h3>
                         <p class="team-text">UI Designer</p>
                         <ul class="team-sm-list">
@@ -336,7 +395,7 @@
                                 </a>
                             </li>
                             <li class="item">
-                                <a class="footer-icon-box" href="">
+                                <a class="footer-icon-box last" href="">
                                     <svg class="footer-icon">
                                     <use href="./images/sprite.svg#icon-linkedin"></use></svg>
                                 </a>
@@ -349,7 +408,7 @@
                 </div>
                 <div >
                     <form class="fotter-content-third">
-                        <label>
+                        <label class="fotter-mail-box">
                             <p class="third-fotter-text">Subscribe</p>
                             <input class="mail-place-fotter" type="email" name="email-fotter" placeholder="E-mail">
                         </label>
@@ -412,10 +471,17 @@
                     <button class="modal-send-button" type="submit">Send</button>
                 </form>
             </div>
-        </div>
+        </div>  
 
-    </main> -->
+    </main>
     <script src="./js/modal.js"></script>
+    <script defer src="js/mobile-menu.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
     
 </body>
 </html>

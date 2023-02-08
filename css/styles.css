@@ -87,6 +87,7 @@ li{
 }
 
 .logo-title {
+  display: block;
     font-family:'Raleway';
     color: var(--seccondary-logo-color);
     text-decoration: none;
@@ -194,9 +195,6 @@ transition: color 250ms var(--animation-timing-function);
 
  /* Герой */
 
-
-
-
  .hero{
   padding-top: 188px;
   padding-bottom: 188px;
@@ -204,16 +202,9 @@ transition: color 250ms var(--animation-timing-function);
   background-repeat: no-repeat;
 background-position: center;
 width: 1440px;
-margin: auto;
-      
+margin: auto;      
  }
- 
 
-
- 
-  
- 
- 
  .hero-title{
    display: block;
     color: var(--text-color);
